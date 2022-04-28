@@ -1,0 +1,200 @@
+    body {
+        background-image: url("../img/aguila.png");
+        background-size: cover;
+        overflow: scroll;
+    }
+    
+    .log-main {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    
+    .container-form {
+        display: grid;
+        width: 500px;
+        height: 300px;
+        grid-template-columns: 200px 200px;
+        grid-template-rows: 200px;
+        background-color: rgb(19, 2, 116) !important;
+        border-radius: 10px;
+    }
+    
+    .item:nth-child(1) {
+        position: relative;
+        background-color: rgb(240, 238, 235) !important;
+        clip-path: circle(150px at left);
+        width: 200px;
+        height: 300px;
+        border: 5px solid rgb(218, 204, 204);
+        background-image: url(../img/Logo_CENIDET_.png);
+        background-size: 70%;
+        background-position: left;
+        background-repeat: no-repeat;
+    }
+    
+    .logo-tecn {
+        position: relative;
+        color: navy;
+        font-size: 1.9em;
+        width: 30px;
+        height: 250px;
+        right: -10%;
+        top: 5%;
+        overflow: hidden;
+        text-justify: distribute-all-lines;
+        animation-name: example;
+        /* animation-duration: 1s;
+    */
+        overflow-wrap: break-word;
+    }
+    
+    .item:nth-child(2) {
+        position: relative;
+        width: 300px;
+        height: 300px;
+    }
+    
+    .header_mail {
+        padding: 50px;
+        margin-bottom: 2em;
+        font-size: calc(1.275rem + .3vw);
+        color: rgb(255, 255, 255);
+    }
+    
+    .input-mail {
+        position: relative;
+        top: 40%;
+        left: 5%;
+    }
+    
+    .text-mail2 {
+        position: relative;
+        bottom: 60%;
+        left: 5%;
+    }
+    
+    .text-pass {
+        position: relative;
+        bottom: 40%;
+        left: 5%;
+        background-color: rgb(19, 2, 116);
+    }
+    
+    .input-mail,
+    .text-mail2,
+    .text-pass,
+    input {
+        position: absolute;
+        width: 250px;
+        height: 30px;
+        border-radius: 6px;
+    }
+    
+    .text-pass,
+    input {
+        position: absolute;
+        width: 250px;
+        height: 30px;
+        border-radius: 6px;
+    }
+    
+    #submi {
+        width: 100px;
+        height: 25px;
+        bottom: 10%;
+        left: 20%;
+        color: rgb(0, 0, 0);
+        background-color: rgb(255, 255, 255);
+    }
+    
+    .idbutton {
+        visibility: visible;
+    }
+    
+    .idbutton-no {
+        visibility: hidden;
+    }
+    
+    .circle-load-no {
+        visibility: hidden;
+    }
+    
+    .vis-circle {
+        visibility: visible;
+    }
+    
+    .vis-circle-no {
+        visibility: hidden;
+    }
+    
+    .aling-circle {
+        position: absolute;
+        bottom: 6vh;
+        left: 11vh;
+    }
+    
+    @keyframes example {
+        from {
+            left: 70%;
+        }
+        to {
+            left: 0%;
+        }
+    }
+    
+    @keyframes logo2 {
+        from {
+            top: -20px;
+        }
+        to {
+            top: 0px;
+        }
+    }
+    
+    @media (max-width:768px) {
+        .vis-circle {
+            position: relative;
+            margin-top: 1.7em;
+        }
+        .container-form {
+            /*width: 90vw;
+            height: 50vh;
+            */
+            width: 300px;
+            height: 350px;
+            grid-template-columns: 300px;
+            grid-template-rows: 150px 150px;
+            border-radius: 10px;
+            justify-content: center;
+        }
+        .item:nth-child(1) {
+            height: 100px;
+            margin-left: auto;
+            margin-right: auto;
+            clip-path: circle(100px at top);
+            background-size: 70%;
+            background-position: top;
+        }
+        .item:nth-child(2) {
+            height: 100%;
+        }
+        .header_mail {
+            padding-top: 10px;
+            position: relative;
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+            color: rgb(255, 255, 255);
+        }
+        .input-mail {
+            top: 50px;
+            margin-left: auto;
+            margin-right: auto;
+            text-transform: lowercase;
+        }
+        .idbutton {
+            bottom: 0px;
+        }
+    }

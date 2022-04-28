@@ -1,0 +1,88 @@
+    .conteiner {
+        display: flex;
+    }
+    
+    .menu-tecnico {
+        width: 400px;
+        height: 80vh;
+        border: 4px solid rgba(5, 102, 26, 0.774);
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+        overflow: scroll;
+    }
+    
+    .eventEliminar {
+        float: right;
+    }
+    
+    .nombre-tecn {
+        color: tomato;
+        font-size: 1rem;
+        font-family: Verdana, Geneva, Tahoma, sans-serif
+    }
+    
+    .conteiner-perfil {
+        padding: 5px;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+    
+    .perfil {
+        display: inline-block;
+        width: 100px;
+        flex-shrink: 3;
+        /* default 1 */
+    }
+    
+    .perfil-enabled {
+        filter: contrast(30%);
+    }
+    
+    .perfil-acepter {
+        background-color: darkslategrey;
+    }
+    
+    .perfil-hover:hover {
+        background-color: rgba(172, 157, 173, 0.397);
+    }
+    
+    .menu-tecnico .nombre-tecn {
+        padding-left: 3px;
+    }
+    
+    .imgtecn,
+    .imgt {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50px;
+        height: 50px;
+    }
+    
+    a:hover {
+        cursor: pointer;
+    }
+    
+    .menu-btns,
+    .item:nth-child(2) {
+        width: 100%;
+    }
+    
+    .menu-btns a:last-child {
+        float: right;
+    }
+    
+    @media (max-width:767px) {
+        .conteiner {
+            flex-wrap: wrap;
+        }
+        .item:nth-child(1) {
+            flex-shrink: 1;
+        }
+        .menu-tecnico {
+            width: 100%;
+            height: 8rem;
+            overflow-x: scroll;
+        }
+    }

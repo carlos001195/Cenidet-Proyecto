@@ -1,0 +1,69 @@
+/*body {
+    color: rgb(219, 211, 211);
+    font-size: 1.2em;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}*/
+
+.conteiner {
+    display: flex;
+    width: 17em;
+    position: relative;
+    margin: 0px auto;
+    padding: 0px auto;
+}
+
+label {
+    color: blanchedalmond;
+    text-decoration-style: dotted;
+    text-transform: uppercase;
+}
+
+.content {
+    width: 20rem;
+    display: block;
+    background-color: rgb(0, 19, 128);
+    margin: 20px 20px;
+    border: 4px solid white;
+    border-radius: 10%;
+    position: absolute;
+}
+
+select {
+    margin: 20px;
+}
+
+.mail-lib {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.content-no,
+.content-liberacion-no {
+    display: none;
+}
+
+.content-liberacion {
+    display: block;
+    width: 70vmax;
+    border: 1px solid black;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.image-status img {
+    width: 100%;
+}
+
+#menssage-status {
+    color: black;
+}
+
+.image-status {
+    width: 100%;
+}
+
+.div-text-status {
+    height: 40px;
+    background-color: rgba(135, 132, 138, 0.596);
+}
